@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  		<title>Provide Feedback</title>
+	</head>
+	<?php if(isset($_POST['submit']))
+{	echo $_POST['submit'];
+    echo $_POST['feedback'];
+} ?>	
+
+	<body>
+   		<p>Provide Feedback :</p>
+ 			<table>
+				<tr><td colspan="5"><textarea name="feedback" rows="10" cols="50"></textarea></td></tr>
+				<tr><td colspan="2"><input type="submit" action="feedback.php" value="$_POST['id']" name="submit" value="Send"></td></tr>
+			</table>
+
+  
+	</body>
+
+</html>
